@@ -20,7 +20,7 @@
     <div class="hamburger-menu">
       <i class="fas fa-bars"></i>
   </div>
-    <div class="nav-links active">
+    <div class="nav-links">
         <div class="links">
           <a href="#" id="active">HOME</a>
         <a href="#">NEWS</a>
@@ -174,9 +174,11 @@
       document.addEventListener('DOMContentLoaded', function() {
           const hamburger = document.querySelector('.hamburger-menu');
           const navLinks = document.querySelector('.nav-links');
+          const menuIcon = document.querySelector(".hamburger-menu i");
   
           hamburger.addEventListener('click', function() {
               navLinks.classList.toggle('active');
+              menuIcon.classList.toggle("fa-xmark");
           });
       });
   </script>
